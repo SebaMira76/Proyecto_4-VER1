@@ -1,0 +1,186 @@
+/* Historia de Usuario #14: En dispositivos de tamaño normal (portátiles, escritorios), el elemento 
+con id="navbar" debe mostrarse en el 
+lado izquierdo de la pantalla y siempre debe ser visible para el usuario. */
+/* Historia de Usuario #15: Mi página de Documentación Técnica debería usar al menos una media query. */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@200;300;700&display=swap');
+
+:root {
+  --text-h1: 1.6em ;
+  --text-h2: 2.2em;
+  --text-h3: 1.8em;
+  --text-h4: 1.2em;
+  --text-p: 1em;
+  --text-warning: 1.5em;
+  --text-footer: 1em;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+}
+
+h1{
+  font-size: var(--text-h1);
+  font-weight: 600;
+  margin: 1em 0em 2em 0em;
+  padding: 0.2em;
+}
+h2 {
+  font-size: var(--text-h2);
+  font-weight: 800;
+  
+}
+
+h3 {
+  font-size: var(--text-h3);
+  font-weight: 600;
+}
+
+h4 {
+  font-size: var(--text-h4);
+  font-weight: 600; 
+}
+
+p, li {
+  font-size: var(--text-p);
+} 
+
+#nav-bar {
+  position: fixed;
+  top: 0em;
+  left: 0em;
+  width: 27em;
+  height: 100%;
+  margin: 0em 1em;
+  border: 0.1em solid #d6d3d3;
+  background-color: #f5f1f1;
+  border-radius: 1em;
+}
+
+#nav-bar li{
+  position: relative;
+  list-style: none;
+  border-top: 0.1em solid #d6d3d3;
+  width: 100%;
+  margin: 0em; 
+}
+#nav-bar ul {
+  height: auto;
+  padding: 0em;
+  margin: 0em;
+}
+
+#nav-bar a {
+  display: block;
+  padding: 1em;
+  color: #4d4b4b;
+  text-decoration: none;
+  cursor:pointer; 
+}
+
+#main-doc {
+  position: absolute;
+  top: 0em;
+  margin: 0em 0em 0em 28em;
+  border: 0.1em solid #d6d3d3;
+  background-color: #f5f1f1;
+  border-radius: 1em;
+  background-image: linear-gradient(100deg, #f5f1f1be,#d6d3d3d3), url(https://media.istockphoto.com/vectors/cartoon-mechanic-thumb-up-vector-id476991626);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ 
+}
+
+header {
+  margin: 0em 0em;
+  padding: 1em 2em;
+  border-radius: 1em;
+}
+
+footer {
+  text-align: center;
+  color: #000000;
+  font-size: var(--text-footer);
+  font-weight: 600;
+  
+}
+
+.container-warning {
+  color: #ff0000;
+  text-align: center;
+  font-weight: 600;
+  border: 0.2em solid #ff0000;
+  margin-top: .2em;
+  background-color: #ffffff;
+  border-radius: .5em;
+}
+
+.div-warning {
+  position: relative;
+  color: #ff0000;
+  text-align: center;
+  font-size: var(--text-warning);
+  font-weight: 800;
+}
+
+.div-warning span{
+  position: relative;
+  top: 0.1em;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1;
+  background-color: #f7f7f7;
+  padding: 0.2em;
+  margin: 0.1em;
+}
+
+
+/* ------ */
+@media only screen and (max-width: 1000px) {
+  /* For mobile phones: */
+body {
+  margin-top: 18em;
+}
+
+  h1 {
+    margin: 1em 0.5em;
+    padding: 0em;
+  }
+
+  #nav-bar a {
+    padding: 0em;
+    margin: 0.5em 1.5em;
+  }
+
+  #nav-bar li{
+    height: 100%;
+  }
+
+  #nav-bar {
+    position: absolute;
+    background-color: #f5f1f1;
+    position: fixed;
+    width: 100%;
+    max-height: 17em;
+    z-index: 1;
+    margin: 0em;
+    border-radius: 0em;
+  }
+
+
+  #main-doc {
+   
+    position: relative;
+    margin: 1em 1em 1em 1em;
+  }
+
+}
+

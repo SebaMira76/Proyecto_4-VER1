@@ -1,0 +1,185 @@
+<!-- Construye una página de documentación técnica -->
+<!-- referencia: https://quickserve.cummins.com/qs3/portal/service/manual/es/es4915920/ -->
+
+<!-- Historia de Usuario #7: Los elementos .main-section deberían contener al menos 5 elementos li en total (no cada uno). -->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,800;1,300;1,600&display=swap" rel="stylesheet">
+
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Tilte -->
+  <title>Informacion técnica</title>
+
+</head>
+  <body>
+    
+        <!-- Historia de Usuario #9: El elemento de barra de navegación debe contener un elemento header que contenga texto 
+        describiendo el tema de la documentación técnica. -->
+
+          
+            <!-- Historia de Usuario #8: Puedo ver un elemento nav con un respectivo id="navbar". -->
+            <nav id="nav-bar">
+              <h1>Procedimiento de Arranque de motor diesel en Clima Frío</h1>
+              <ul>
+                <!-- Historia de Usuario #10: Adicionalmente, la barra de navegación debería contener enlaces (a) con la clase 
+                  nav-link. Debería haber uno para cada elemento con la clase main-section. -->
+                <!-- Historia de Usuario #11: El elemento header en la barra de navegación debe aparecer antes que cualquier 
+                  elemento de enlace (a). -->
+                <!-- Historia de Usuario #12: Cada elemento con la clase nav-link debería tener un texto que corresponda con 
+                  el título header dentro de cada sección section (p.e. Si tienes una sección/título "Hola Mundo", tu barra de 
+                  navegación debería tener un elemento que contenga el texto "Hola Mundo"). -->
+                <!-- Historia de Usuario #13: Cuando hago clic en un elemento de la barra de navegación, la página debe navegar 
+                  a la sección correspondiente del elemento main-doc (p.e. Si hago clic en un elemento nav-link que contiene el texto 
+                  "Hola Mundo", la página navegará al elemento section que tiene ese id y contiene el título header correspondiente. -->
+                <li><a  class="" href="#inicio">Inicio</a></li>
+                <li><a  class="" href="#informacion_general">Información General</a></li>
+                <li><a  class="" href="#ayuda_en_arranque">Ayuda en Arranque</a></li>
+                <li><a  class="" href="#auxiliares_de_aranque_con_eter">Auxiliares de Arranque con Éter</a></li>
+                <li><a  class="" href="#calentador_de_rejilla">Calentador de Rejilla</a></li>
+              </ul>
+            </nav>
+          
+    <!-- Historia de Usuario #1: Puedo ver un elemento main con un respectivo id="main-doc", 
+      que contiene el contenido principal de la página (documentación técnica). -->
+    <main id="main-doc">
+       <!-- Sección 1 -->
+      <!-- Historia de Usuario #2: Dentro del elemento #main-doc puedo ver varios elementos section, 
+        cada uno con una clase main-section. Debería haber un mínimo de 5. -->
+      <!-- Historia de Usuario #4: Cada elemento section con la clase main-section también debería tener 
+        un id que corresponda con el texto de cada header contenido en él. Cualquier espacio debería ser 
+        reemplazado por guiones bajos (p.e. La sección section que contiene el título "JavaScript and Java" 
+        debería tener un respectivo id="JavaScript_and_Java"). -->
+        <!-- Historia de Usuario #5: Los elementos .main-section deberían contener al menos 10 elementos p 
+          en total (no cada uno). -->
+          <section id="inicio" class="main-section">
+            <!-- Historia de Usuario #3: El primer elemento dentro de cada sección .main-section debería ser 
+            un elemento header que contenga texto describiendo el tema de esa sección. -->
+            
+            <header>
+              <h2>Procedimiento de Arranque de motor diesel en Clima Frío</h2>
+              <h3>Inicio</h3>
+              <div class="sub-div">
+                <p>El desempeño satisfactorio de un motor diésel en climas frío y ártico requiere modificación en los sistemas de soporte del motor, prácticas de operación y procedimientos de mantenimiento. Todos los involucrados con equipo en estos climas deben abordar el hecho de que los climas fríos tendrán un efecto en el arranque, rendimiento y confiabilidad del equipo así como del motor. La confiabilidad del motor y equipo serán seriamente deterioradas si no está preparado correctamente para el medio ambiente en el cual está operando. Para preparar el equipo para el invierno hay tres objetivos:
+                  <ol>
+                    <li>Características razonables de arranque seguidas por calentamiento práctico y seguro del motor y del equipo</li>
+                    <li>Una unidad o instalación necesita ser tan independiente como sea posible de otras influencias externas  </li>
+                    <li>Modificaciones que mantengan temperaturas de operación satisfactorias del motor con un incremento mínimo en mantenimiento del equipo y accesorios.</li>
+                  </ol>
+                </p>
+              </div>
+  
+          </header>
+        </section>
+  
+        <!-- Sección 2 -->
+        <section id="informacion_general" class="main-section">
+          <header>
+              <h3>Información General</h3>
+              <div class="sub-div">
+                <p>Siga los Procedimientos de Arranque Normal en esta sección en agua fría. La lámpara Wait-To-Start (espere para arrancar) permanecerá encendida por más tiempo.</p>
+                <!-- Historia de Usuario #6: Los elementos .main-section deberían contener al menos 5 elementos code en total (no cada uno). -->
+                <code>
+                -->Ponga en conntacto <br>
+                -->Espera para arrancar hasta que la luz se apague <br>
+                -->Arranque el motor <br>
+                </code>
+              </div>
+            
+          </header>
+        </section>
+        
+        <!-- Sección 3 -->
+        <section id="ayuda_en_arranque" class="main-section">
+          <header>
+              <h3>Ayuda en arranque</h3>
+              <div class="sub-div">
+                <p>Con Equipo de Dosificación Mecánico o Eléctrico (Éter)</p>
+                  <ul>
+                    <li>Desacople la unidad impulsada, o si está equipada, ponga la transmisión en neutral</li>
+                    <li>Mientras da marcha al motor, inyecte cantidades dosificadas de fluido para arranque</li>
+                    <li>La presión de aceite del motor debe indicarse en el indicador dentro de 15 segundos después del arranque</li>
+                  </ul>
+            </div>
+          </header>
+  
+        </section>
+        <!-- Sección 4 -->
+        <section id="auxiliares_de_aranque_con_eter" class="main-section">
+          <header>
+            <div>
+              <h3>Auxiliares de Arranque con Éter</h3>
+              <div class="sub-div">
+                <p>Rocíe fluido parar arranque en el filtro de aire mientras otra persona da marcha al motor</p>
+              </div>
+            </div>
+            <div id="container-warning">
+              <h3>Precauciones</h3>
+                <div class="div-warning">
+                  <p><span class="material-icons-outlined">warning</span> - PRECAUCION - <span class="material-icons-outlined">warning</span></p>
+                </div>
+                <div class="container-warning">
+                  <p>Debido al peligro potencial para una explosión, no use auxiliares volátiles para arranque en frío en operaciones mineras bajo tierra o en túneles. Pregunte al Inspector local de la Secretaría de Minas por instrucciones.</p>
+                </div>
+                <div class="container-warning">
+                  <p>El fluido para arranque es altamente inflamable y explosivo. Mantenga flamas, chispas, e interruptores de arco eléctrico lejos del fluido para arranque.</p>
+                </div>
+                <div class="container-warning">
+                  <p>No inhale gases de fluido para arranque. Los gases del fluido para arranque pueden ser peligrosos para su salud.</p>
+                </div>
+                <div class="container-warning">
+                  <p>No use cantidades excesivas de fluido de arranque cuando arranque un motor. El uso de demasiado fluido de arranque causará daño para el motor.</p>
+                </div>
+            </div>
+          </header>
+        </section>
+        <!-- Sección 5 -->
+        <section id="calentador_de_rejilla" class="main-section">
+          <header>
+              <h3>Calentador de Rejilla</h3>
+              <div class="sub-div">
+                <p>
+                  Está disponible un calentador de rejilla que mejora las características de arranque en clima frío al calentar el aire de admisión. También pude servir para reducir el humo blanco si está energizado durante las temperaturas de ambiente frío mientras el motor está en ralentí.<br>
+                  El calentador eléctrico de rejilla opera en un modo de precalentamiento y postcalentamiento. La duración del tiempo del calentador es una función de la temperatura del motor. <br>
+                  Si la temperatura del aire del múltiple de admisión es mayor que 19°C [66°F], el sistema de calentador de rejilla eléctrico no será activado. Si la temperatura del aire del múltiple de admisión está por debajo de 19°C [66°F], el sistema operará como sigue: <br>
+                  <ol>
+                    <h4>Ciclo de Arranque del Motor</h4>
+                    <li>Gire la llave de encendido a la posición de RUN. Cuando la llave está en esta posición, la lámpara WAIT-TO-START se iluminará por aproximadamente 25 segundos. No dé marcha al motor hasta que la lámpara WAIT-TO-START se apague</li>
+                    <p>
+                      NOTA:<br>
+                      El controlador es restablecido cada vez que el encendido es girado a off y el ciclo comenzará otra vez.
+                    </p>
+                    <li>Cuando la lámpara WAIT-TO-START se apaga, el ciclo de precalentamiento está completo. Déle marcha al motor.</li>
+                    <h4>Ciclo de Postcalentamiento</h4>
+                    <li>El postcalentamiento ocurre cuando los elementos del calentador de rejilla son ciclados por un rato con el motor funcionando. El postcalentamiento ayuda a calentar más rápido el motor y elimina el humo blanco. El postcalentamiento está determinado por la temperatura del aire de admisión previa al arranque.</li>
+                  </ol>
+                </p>
+              </div>
+          </header>
+        </section>
+      <footer>
+          <p>Manual técnico editado por Sebastian Miranda para Proyectos de evaluación de FreeCodeCamp</p>
+          <p>
+            Fuente de la información Manual de Propietario Cummins. <br>
+            <a id="footer-link" href="https://quickserve.cummins.com/qs3/portal/service/manual/es/es4915920/" target="_blank"> Manual del Propietario B3.9, B4.5, y B5.9 Industrial (4915920)</a>
+          </p>
+      </footer>
+    </main>
+
+  </body>
+
+</html>
